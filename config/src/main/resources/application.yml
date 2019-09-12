@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhangzx28/config-repo
+          username: zhangzx0208@gmail.com
+          password: zhangzhenxin0208
+          basedir: /Users/zhangzhenxin/WorkSpace/springcloud/basedir
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+
+encrypt:
+  key: mysecret
