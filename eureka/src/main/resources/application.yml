@@ -1,7 +1,7 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8762/eureka/
     register-with-eureka: false
   #开发环境关闭自我保护机制 生产环境删除此配置
   server:
@@ -12,4 +12,4 @@ spring:
   application:
     name: eureka
 server:
-  port: 8761
+  port: 8762

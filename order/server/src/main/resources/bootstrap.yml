@@ -7,7 +7,13 @@ spring:
         service-id: CONFIG
         enabled: true
       profile: test
+    stream:
+      bindings:
+        # 配置的 Exchange名称 StreamClient中的input
+        input:
+          group: order
+          content-type: application/json
 eureka:
   client:
     service-url:
-      defualtZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8762/eureka/
