@@ -24,6 +24,7 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
         <product-client.version>0.0.1-SNAPSHOT</product-client.version>
+        <seata.version>0.8.0</seata.version>
     </properties>
 
     <dependencyManagement>
@@ -39,6 +40,16 @@
                 <groupId>com.person</groupId>
                 <artifactId>product-client</artifactId>
                 <version>${product-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-seata</artifactId>
+                <version>2.1.0.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>io.seata</groupId>
+                <artifactId>seata-all</artifactId>
+                <version>${seata.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -12,6 +12,7 @@ import com.person.order.server.utils.KeyUtil;
 import com.person.product.client.ProductClient;
 import com.person.product.common.DecreaseStockInput;
 import com.person.product.common.ProductInfoOutput;
+import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -41,6 +42,7 @@ public class OrderServiceImpl implements OrderService {
     private ProductClient productClient;
 
     @Override
+    @GlobalTransactional
     @Transactional
     public OrderDTO create(OrderDTO orderDTO) {
         String orderId = KeyUtil.getUniqueKey();
