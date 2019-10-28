@@ -4,7 +4,6 @@ import com.person.product.common.DecreaseStockInput;
 import com.person.product.common.ProductInfoOutput;
 import com.person.product.server.dataobject.ProductCategory;
 import com.person.product.server.dataobject.ProductInfo;
-import com.person.product.server.dto.CartDTO;
 import com.person.product.server.service.CategoryService;
 import com.person.product.server.service.ProductService;
 import com.person.product.server.utils.ResultVOUtil;
